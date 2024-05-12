@@ -12,7 +12,7 @@ class ResourceList extends StatelessWidget {
 
   Future<List<LatestArticle>> fetchLatestArticles() async {
     final apiUrl =
-        'https://localhost:7018/api/GetLatestResources?page=1&pageSize=10';
+        'https://www.afrotada.com/api/GetLatestResources?page=1&pageSize=10';
     final response = await http.get(Uri.parse(apiUrl));
 
     if (response.statusCode == 200) {
